@@ -14,15 +14,15 @@
                     
                     {% csrf_token %}
 					<div class="form-group">
-                        <label for="to" class="col-sm-1 control-label">To:</label>
+                        <label for="from" class="col-sm-1 control-label">From:</label>
                         <div class="col-sm-11">
-                            <input type="email" class="form-control select2-offscreen" id="to" name="to" placeholder="Type email">
+                            <input type="email" class="form-control select2-offscreen" id="from" name="from" placeholder="Type email">
                         </div>
                     </div>
 					<div class="form-group">
-                        <label for="cc" class="col-sm-1 control-label">CC:</label>
+                        <label for="to" class="col-sm-1 control-label">To:</label>
                         <div class="col-sm-11">
-                            <input type="email" class="form-control select2-offscreen" id="cc" name="cc" placeholder="Type email">
+                            <input type="email" class="form-control select2-offscreen" id="to" name="to" placeholder="Type email">
                         </div>
                     </div>
 					<div class="form-group">
@@ -60,7 +60,7 @@
                         <br>	
                         
                         <div class="form-group">
-                            <textarea class="form-control" id="message" name="body" rows="12" placeholder="Click here to reply"></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="12" placeholder="Click here to reply"></textarea>
                         </div>
                         
                         <div class="form-group">	

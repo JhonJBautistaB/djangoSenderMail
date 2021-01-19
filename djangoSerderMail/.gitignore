@@ -1,9 +1,11 @@
 # Logs
 
-# Directorios
+# Archivos de compilación / optimización / DLL
 __pycache__/
 
-# Variables de Entorno
-venv/
+# Distribución / Paquetes
 
 # testing
+
+# Ambientes
+venv/
