@@ -1,2 +1,9 @@
+# Logs
+
+# Directorios
 __pycache__/
+
+# Variables de Entorno
 venv/
+
+# testing

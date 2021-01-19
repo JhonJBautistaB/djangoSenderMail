@@ -8,25 +8,28 @@
     <div class="col-md-9">
 		<div class="panel panel-default">
 			<div class="panel-body message">
-				<p class="text-center">New Message</p>
-				<form class="form-horizontal" role="form" action="/send_email/" method="POST" >
+                <p class="text-center">New Message</p>
+                
+                <form class="form-horizontal" role="form" action="/form_email/" method="POST" >
+                    
                     {% csrf_token %}
 					<div class="form-group">
-                        <label for="cc" class="col-sm-1 control-label">To:</label>
+                        <label for="to" class="col-sm-1 control-label">To:</label>
                         <div class="col-sm-11">
-                            <input type="email" class="form-control select2-offscreen" id="to" placeholder="Type email" tabindex="-1">
+                            <input type="email" class="form-control select2-offscreen" id="to" name="to" placeholder="Type email">
                         </div>
                     </div>
 					<div class="form-group">
                         <label for="cc" class="col-sm-1 control-label">CC:</label>
                         <div class="col-sm-11">
-                            <input type="email" class="form-control select2-offscreen" id="cc" placeholder="Type email" tabindex="-1">
+                            <input type="email" class="form-control select2-offscreen" id="cc" name="cc" placeholder="Type email">
                         </div>
                     </div>
 					<div class="form-group">
-                        <label for="bcc" class="col-sm-1 control-label">BCC:</label>
-                    <div class="col-sm-11">
-                            <input type="email" class="form-control select2-offscreen" id="bcc" placeholder="Type email" tabindex="-1">
+                        <label for="subject" class="col-sm-1 control-label">Subject:</label>
+                        <div class="col-sm-11">
+                            <input type="text" class="form-control select2-offscreen" id="subject" name="subject" placeholder="Type email">
+                        </div>
                     </div>                                        
                     <!-- Barra Edición -->
                     <div class="col-sm-11 col-sm-offset-1">					
